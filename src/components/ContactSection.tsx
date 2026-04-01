@@ -1,17 +1,7 @@
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin, Send } from "lucide-react";
-import { useState } from "react";
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 const ContactSection = () => {
-  const [formData, setFormData] = useState({ name: "", email: "", phone: "", message: "" });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Form submission placeholder
-    alert("Dziękujemy za wiadomość. Skontaktujemy się wkrótce.");
-    setFormData({ name: "", email: "", phone: "", message: "" });
-  };
-
   return (
     <section id="kontakt" className="section-padding bg-background">
       <div className="container-narrow">
@@ -28,7 +18,7 @@ const ContactSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Contact info */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -36,7 +26,7 @@ const ContactSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="space-y-6 mb-10">
+            <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <MapPin className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
                 <div>
@@ -65,10 +55,29 @@ const ContactSection = () => {
                   </a>
                 </div>
               </div>
+              <div className="flex items-start gap-4">
+                <Clock className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-serif text-lg text-foreground">Godziny otwarcia</h3>
+                  <div className="text-muted-foreground text-sm space-y-0.5">
+                    <p>Poniedziałek – Wtorek: 9:30 – 17:00</p>
+                    <p>Środa – Czwartek: 10:00 – 17:00</p>
+                    <p>Piątek: 9:30 – 16:00</p>
+                    <p className="text-xs italic mt-1 text-muted-foreground/70">*inne terminy po wcześniejszym uzgodnieniu</p>
+                  </div>
+                </div>
+              </div>
             </div>
+          </motion.div>
 
-            {/* Map placeholder */}
-            <div className="w-full h-64 rounded-sm bg-muted border border-border flex items-center justify-center overflow-hidden">
+          {/* Map */}
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="w-full h-80 rounded-sm bg-muted border border-border overflow-hidden">
               <iframe
                 title="Lokalizacja kancelarii notarialnej"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2444.0!2d21.027!3d52.235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDE0JzA2LjAiTiAyMcKwMDEnMzcuMiJF!5e0!3m2!1spl!2spl!4v1"
@@ -81,79 +90,6 @@ const ContactSection = () => {
                 className="rounded-sm"
               />
             </div>
-          </motion.div>
-
-          {/* Contact form */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <form onSubmit={handleSubmit} className="space-y-5">
-              <div>
-                <label htmlFor="name" className="block text-sm font-sans text-foreground mb-1.5">
-                  Imię i nazwisko
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  required
-                  maxLength={100}
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-4 py-3 bg-card border border-border rounded-sm text-foreground text-sm focus:outline-none focus:border-gold transition-colors"
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-sans text-foreground mb-1.5">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  required
-                  maxLength={255}
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-3 bg-card border border-border rounded-sm text-foreground text-sm focus:outline-none focus:border-gold transition-colors"
-                />
-              </div>
-              <div>
-                <label htmlFor="phone" className="block text-sm font-sans text-foreground mb-1.5">
-                  Telefon
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  maxLength={20}
-                  value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="w-full px-4 py-3 bg-card border border-border rounded-sm text-foreground text-sm focus:outline-none focus:border-gold transition-colors"
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-sm font-sans text-foreground mb-1.5">
-                  Wiadomość
-                </label>
-                <textarea
-                  id="message"
-                  required
-                  maxLength={1000}
-                  rows={5}
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-4 py-3 bg-card border border-border rounded-sm text-foreground text-sm focus:outline-none focus:border-gold transition-colors resize-none"
-                />
-              </div>
-              <button
-                type="submit"
-                className="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy-dark font-sans font-semibold px-8 py-3.5 rounded-sm tracking-wide transition-colors w-full"
-              >
-                <Send className="w-4 h-4" />
-                Wyślij wiadomość
-              </button>
-            </form>
           </motion.div>
         </div>
       </div>
