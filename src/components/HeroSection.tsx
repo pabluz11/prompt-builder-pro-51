@@ -30,7 +30,8 @@ const HeroSection = () => {
           </div>
 
           <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-beige-light leading-tight mb-6 max-w-4xl mx-auto">
-            Notariusz Marta Zabielska
+            <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-[0.15em] uppercase">Kancelaria Notarialna</span>
+            Marta Zabielska
           </h1>
 
           <p className="font-serif text-lg md:text-xl text-gold-light italic mb-4">
