@@ -19,7 +19,7 @@ const Index = () => {
       <LocalSeoSection />
       {/* <HowItWorksSection /> */}
       {/* <ArticlesSection /> */}
-      <MaterialsSection />
+      {/* <MaterialsSection /> */}
       <ContactSection />
       <Footer />
     </main>
