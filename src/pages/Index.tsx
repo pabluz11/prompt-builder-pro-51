@@ -5,7 +5,7 @@ import ServicesSection from "@/components/ServicesSection";
 import LocalSeoSection from "@/components/LocalSeoSection";
 // import HowItWorksSection from "@/components/HowItWorksSection";
 // import ArticlesSection from "@/components/ArticlesSection";
-import MaterialsSection from "@/components/MaterialsSection";
+// import MaterialsSection from "@/components/MaterialsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
