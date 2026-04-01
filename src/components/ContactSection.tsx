@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin, Send } from "lucide-react";
-import { useState } from "react";
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", message: "" });
