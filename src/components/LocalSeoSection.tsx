@@ -34,9 +34,10 @@ const LocalSeoSection = () => {
               <div>
                 <h3 className="font-serif text-lg mb-1">Godziny</h3>
                 <p className="text-primary-foreground/70 text-sm leading-relaxed">
-                  Poniedziałek – Piątek<br />
-                  9:00 – 17:00<br />
-                  Po wcześniejszym umówieniu
+                  Poniedziałek – Wtorek: 9:30 – 17:00<br />
+                  Środa – Czwartek: 10:00 – 17:00<br />
+                  Piątek: 9:30 – 16:00<br />
+                  <span className="italic text-xs">*inne terminy po wcześniejszym uzgodnieniu</span>
                 </p>
               </div>
             </div>
