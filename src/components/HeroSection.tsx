@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Phone, Calendar } from "lucide-react";
+import { Phone } from "lucide-react";
 import heroImage from "@/assets/hero-notary.jpg";
 
 const HeroSection = () => {
