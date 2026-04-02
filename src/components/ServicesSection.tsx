@@ -5,7 +5,7 @@ const services = [
   {
     icon: Home,
     title: "Obrót nieruchomościami",
-    desc: "Umowy sprzedaży, darowizny i zamiany nieruchomości. Wpisy do ksiąg wieczystych, ustanawianie hipotek i służebności.",
+    desc: "Umowy notarialne sprzedaży, darowizny i zamiany nieruchomości. Akty notarialne z wpisem do ksiąg wieczystych, ustanawianie hipotek i służebności.",
   },
   {
     icon: Building,
