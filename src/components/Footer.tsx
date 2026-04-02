@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
           <div>
             <h3 className="font-serif text-xl mb-4">
-              Notariusz <span className="text-gold">Zabielska</span>
+              Kancelaria Notarialna <span className="text-gold">Marta Zabielska</span>
             </h3>
             <p className="text-primary-foreground/60 text-sm leading-relaxed">
               Kancelaria Notarialna Marty Zabielskiej. Profesjonalna obsługa notarialna
