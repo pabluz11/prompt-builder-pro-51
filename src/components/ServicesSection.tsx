@@ -5,7 +5,7 @@ const services = [
   {
     icon: Home,
     title: "Obrót nieruchomościami",
-    desc: "Umowy sprzedaży, darowizny i zamiany nieruchomości. Wpisy do ksiąg wieczystych, ustanawianie hipotek i służebności.",
+    desc: "Umowy notarialne sprzedaży, darowizny i zamiany nieruchomości. Akty notarialne z wpisem do ksiąg wieczystych, ustanawianie hipotek i służebności.",
   },
   {
     icon: Building,
@@ -35,7 +35,7 @@ const services = [
   {
     icon: ScrollText,
     title: "Prawo spadkowe",
-    desc: "Sporządzanie testamentów, akty poświadczenia dziedziczenia, umowy o dział spadku i zrzeczenie się dziedziczenia.",
+    desc: "Sporządzanie testamentów w formie aktu notarialnego, akty poświadczenia dziedziczenia, umowy o dział spadku i zrzeczenie się dziedziczenia.",
   },
   {
     icon: Heart,
@@ -55,10 +55,14 @@ const ServicesSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-gold text-sm tracking-[0.2em] uppercase font-sans">Usługi</span>
-          <h2 className="font-serif text-3xl md:text-4xl text-foreground mt-3">
-            Zakres usług
+          <span className="text-gold text-sm tracking-[0.2em] uppercase font-sans">Usługi notarialne</span>
+          <h2 className="font-serif text-3xl md:text-4xl text-foreground mt-3 mb-3">
+            Akty notarialne i umowy – pełen zakres usług
           </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto text-sm leading-relaxed">
+            Nasza kancelaria notarialna sporządza akty notarialne, umowy notarialne
+            oraz wszystkie czynności wymagające udziału notariusza.
+          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

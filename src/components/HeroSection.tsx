@@ -35,13 +35,13 @@ const HeroSection = () => {
           </h1>
 
           <p className="font-serif text-lg md:text-xl text-gold-light italic mb-4">
-            Doświadczenie i zaufanie w czynnościach notarialnych
+            Akty notarialne i umowy notarialne – notariusz Warszawa Powiśle
           </p>
 
           <p className="text-beige/80 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Zapewniamy pełną obsługę notarialną z zachowaniem najwyższych standardów
-            prawnych. Każda czynność wykonywana jest z dbałością o precyzję, poufność
-            i bezpieczeństwo prawne naszych Klientów.
+            Kancelaria notarialna z pełnym zakresem czynności notarialnych: akty notarialne,
+            umowy sprzedaży nieruchomości, testamenty, darowizny i obsługa spółek.
+            Gwarantujemy precyzję, poufność i bezpieczeństwo prawne.
           </p>
 
           <div className="flex justify-center">
