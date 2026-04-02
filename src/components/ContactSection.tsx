@@ -67,7 +67,30 @@ const ContactSection = () => {
                   </div>
                 </div>
               </div>
-            </div>
+              <div className="flex items-start gap-4">
+                <div className="w-5 h-5 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-serif text-lg text-foreground">Numery rachunków bankowych</h3>
+                  <div className="text-muted-foreground text-sm space-y-2 mt-1">
+                    <div>
+                      <p className="font-medium text-foreground/80">Rachunek bieżący PLN:</p>
+                      <p>96 1090 1056 0000 0001 6504 3332</p>
+                    </div>
+                    <div>
+                      <p className="font-medium text-foreground/80">Rachunek depozytowy:</p>
+                      <p>67 1090 1043 0000 0001 6504 3496</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="w-5 h-5 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-serif text-lg text-foreground">NIP</h3>
+                  <p className="text-muted-foreground text-sm">758 199 97 69</p>
+                </div>
+              </div>
+              </div>
           </motion.div>
 
           {/* Map */}
@@ -80,7 +103,7 @@ const ContactSection = () => {
             <div className="w-full h-80 rounded-sm bg-muted border border-border overflow-hidden">
               <iframe
                 title="Lokalizacja kancelarii notarialnej"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2444.0!2d21.027!3d52.235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDE0JzA2LjAiTiAyMcKwMDEnMzcuMiJF!5e0!3m2!1spl!2spl!4v1"
+                src="https://maps.google.com/maps?q=Jaracza+3,+Warszawa,+Polska&t=&z=16&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -92,6 +115,18 @@ const ContactSection = () => {
             </div>
           </motion.div>
         </div>
+
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center text-muted-foreground text-sm mt-12 max-w-2xl mx-auto leading-relaxed"
+        >
+          Zapraszamy do kontaktu przed umówienie się na czynność notarialną, co
+          umożliwi precyzyjne ustalenie zarówno jej rodzaju, jak i zakresu niezbędnych
+          dokumentów.
+        </motion.p>
       </div>
     </section>
   );

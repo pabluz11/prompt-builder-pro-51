@@ -6,7 +6,7 @@ const navLinks = [
   { label: "O kancelarii", href: "#o-kancelarii" },
   { label: "Usługi", href: "#uslugi" },
   { label: "Jak działamy", href: "#jak-dzialamy" },
-  { label: "Artykuły", href: "#artykuly" },
+  
   { label: "Kontakt", href: "#kontakt" },
 ];
 
@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-navy-light/30">
       <div className="container-narrow flex items-center justify-between h-16 md:h-20 px-4 lg:px-16">
         <a href="#" className="font-serif text-lg md:text-xl text-primary-foreground tracking-wide">
-          Notariusz <span className="text-gold">Zabielska</span>
+          Kancelaria Notarialna <span className="text-gold">Marta Zabielska</span>
         </a>
 
         {/* Desktop */}
