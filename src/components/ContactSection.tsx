@@ -66,8 +66,30 @@ const ContactSection = () => {
                     <p className="text-xs italic mt-1 text-muted-foreground/70">*inne terminy po wcześniejszym uzgodnieniu</p>
                   </div>
                 </div>
+              <div className="flex items-start gap-4">
+                <div className="w-5 h-5 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-serif text-lg text-foreground">Numery rachunków bankowych</h3>
+                  <div className="text-muted-foreground text-sm space-y-2 mt-1">
+                    <div>
+                      <p className="font-medium text-foreground/80">Rachunek bieżący PLN:</p>
+                      <p>96 1090 1056 0000 0001 6504 3332</p>
+                    </div>
+                    <div>
+                      <p className="font-medium text-foreground/80">Rachunek depozytowy:</p>
+                      <p>67 1090 1043 0000 0001 6504 3496</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
+              <div className="flex items-start gap-4">
+                <div className="w-5 h-5 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-serif text-lg text-foreground">NIP</h3>
+                  <p className="text-muted-foreground text-sm">758 199 97 69</p>
+                </div>
+              </div>
+              </div>
           </motion.div>
 
           {/* Map */}
