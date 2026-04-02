@@ -12,9 +12,9 @@ const LocalSeoSection = () => {
           transition={{ duration: 0.6 }}
           className="max-w-4xl mx-auto"
         >
-          <span className="text-gold text-sm tracking-[0.2em] uppercase font-sans">Lokalizacja</span>
+          <span className="text-gold text-sm tracking-[0.2em] uppercase font-sans">Lokalizacja kancelarii</span>
           <h2 className="font-serif text-3xl md:text-4xl mt-3 mb-8">
-            Notariusz Warszawa Powiśle – ul. Stefana Jaracza
+            Kancelaria notarialna Warszawa Powiśle – ul. Jaracza
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8 mb-10">
