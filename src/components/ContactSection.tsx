@@ -66,6 +66,7 @@ const ContactSection = () => {
                     <p className="text-xs italic mt-1 text-muted-foreground/70">*inne terminy po wcześniejszym uzgodnieniu</p>
                   </div>
                 </div>
+              </div>
               <div className="flex items-start gap-4">
                 <div className="w-5 h-5 flex-shrink-0 mt-1" />
                 <div>
