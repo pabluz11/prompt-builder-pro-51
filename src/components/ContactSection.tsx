@@ -14,7 +14,7 @@ const ContactSection = () => {
         >
           <span className="text-gold text-sm tracking-[0.2em] uppercase font-sans">Kontakt</span>
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mt-3">
-            Skontaktuj się z kancelarią
+            Kontakt z kancelarią notarialną
           </h2>
         </motion.div>
 

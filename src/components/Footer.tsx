@@ -38,11 +38,11 @@ const Footer = () => {
           <div>
             <h4 className="font-serif text-lg mb-4">Usługi</h4>
             <ul className="space-y-2 text-sm text-primary-foreground/70">
-              <li>Nieruchomości</li>
-              <li>Spadki i testamenty</li>
-              <li>Umowy i pełnomocnictwa</li>
-              <li>Poświadczenia notarialne</li>
-              <li>Obsługa firm</li>
+              <li>Akty notarialne</li>
+              <li>Umowy notarialne nieruchomości</li>
+              <li>Testamenty</li>
+              <li>Obsługa spółek</li>
+              <li>Prawo spadkowe i rodzinne</li>
             </ul>
           </div>
         </div>

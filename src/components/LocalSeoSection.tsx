@@ -55,10 +55,10 @@ const LocalSeoSection = () => {
           </div>
 
           <p className="text-primary-foreground/70 leading-relaxed text-sm">
-            Kancelaria notarialna zlokalizowana jest w prestiżowej części Warszawy – na Powiślu,
-            przy ul. Stefana Jaracza. Obsługujemy klientów z całej Warszawy, w szczególności
-            z dzielnic Śródmieście, Powiśle, Solec oraz Mokotów. Dogodna lokalizacja zapewnia
-            łatwy dojazd komunikacją miejską oraz samochodem.
+            Nasza kancelaria notarialna mieści się w prestiżowej części Warszawy – na Powiślu,
+            przy ul. Stefana Jaracza. Sporządzamy akty notarialne i umowy notarialne dla klientów
+            z całej Warszawy, w szczególności z dzielnic Śródmieście, Powiśle, Solec oraz Mokotów.
+            Dogodna lokalizacja zapewnia łatwy dojazd komunikacją miejską oraz samochodem.
           </p>
         </motion.div>
       </div>

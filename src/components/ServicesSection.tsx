@@ -35,7 +35,7 @@ const services = [
   {
     icon: ScrollText,
     title: "Prawo spadkowe",
-    desc: "Sporządzanie testamentów, akty poświadczenia dziedziczenia, umowy o dział spadku i zrzeczenie się dziedziczenia.",
+    desc: "Sporządzanie testamentów w formie aktu notarialnego, akty poświadczenia dziedziczenia, umowy o dział spadku i zrzeczenie się dziedziczenia.",
   },
   {
     icon: Heart,
