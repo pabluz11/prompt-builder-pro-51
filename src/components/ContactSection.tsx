@@ -103,7 +103,7 @@ const ContactSection = () => {
             <div className="w-full h-80 rounded-sm bg-muted border border-border overflow-hidden">
               <iframe
                 title="Lokalizacja kancelarii notarialnej"
-                src="https://maps.google.com/maps?q=Jaracza+3,+Warszawa,+Polska&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=Jaracza+10,+Warszawa,+Polska&t=&z=16&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
