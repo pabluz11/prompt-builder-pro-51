@@ -10,8 +10,8 @@ const Footer = () => {
               Kancelaria Notarialna <span className="text-gold">Marta Zabielska</span>
             </h3>
             <p className="text-primary-foreground/60 text-sm leading-relaxed">
-              Kancelaria Notarialna Marty Zabielskiej. Profesjonalna obsługa notarialna
-              w Warszawie na Powiślu.
+              Kancelaria notarialna w Warszawie na Powiślu. Sporządzamy akty notarialne,
+              umowy notarialne, testamenty i obsługujemy transakcje nieruchomościami.
             </p>
           </div>
 
