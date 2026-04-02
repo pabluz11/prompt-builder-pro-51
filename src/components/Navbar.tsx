@@ -6,7 +6,7 @@ const navLinks = [
   { label: "O kancelarii", href: "#o-kancelarii" },
   { label: "Usługi", href: "#uslugi" },
   { label: "Jak działamy", href: "#jak-dzialamy" },
-  { label: "Artykuły", href: "#artykuly" },
+  
   { label: "Kontakt", href: "#kontakt" },
 ];
 
