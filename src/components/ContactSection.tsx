@@ -114,6 +114,18 @@ const ContactSection = () => {
             </div>
           </motion.div>
         </div>
+
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center text-muted-foreground text-sm mt-12 max-w-2xl mx-auto leading-relaxed"
+        >
+          Zapraszamy do kontaktu przed umówienie się na czynność notarialną, co
+          umożliwi precyzyjne ustalenie zarówno jej rodzaju, jak i zakresu niezbędnych
+          dokumentów.
+        </motion.p>
       </div>
     </section>
   );
