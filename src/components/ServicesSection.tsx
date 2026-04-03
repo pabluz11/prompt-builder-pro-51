@@ -57,7 +57,7 @@ const ServicesSection = () => {
         >
           <span className="text-gold text-sm tracking-[0.2em] uppercase font-sans">Usługi notarialne</span>
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mt-3 mb-3">
-            Akty notarialne i umowy – pełen zakres usług
+            Usługi notarialne Warszawa – akty notarialne i umowy notarialne
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-sm leading-relaxed">
             Nasza kancelaria notarialna sporządza akty notarialne, umowy notarialne
