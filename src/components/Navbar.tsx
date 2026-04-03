@@ -5,8 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 const navLinks = [
   { label: "O kancelarii", href: "#o-kancelarii" },
   { label: "Usługi", href: "#uslugi" },
-  { label: "Jak działamy", href: "#jak-dzialamy" },
-  
   { label: "Kontakt", href: "#kontakt" },
 ];
 
