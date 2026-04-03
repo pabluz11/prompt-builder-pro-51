@@ -123,7 +123,7 @@ const ContactSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center text-muted-foreground text-sm mt-12 max-w-2xl mx-auto leading-relaxed"
         >
-          Zapraszamy do kontaktu przed umówienie się na czynność notarialną, co
+          Zapraszamy do kontaktu przed umówieniem się na czynność notarialną, co
           umożliwi precyzyjne ustalenie zarówno jej rodzaju, jak i zakresu niezbędnych
           dokumentów.
         </motion.p>

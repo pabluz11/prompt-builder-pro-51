@@ -20,12 +20,13 @@ const LocalSeoSection = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-10">
             <div className="flex gap-4">
               <MapPin className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
-              <div>
+              <div itemScope itemType="https://schema.org/PostalAddress">
                 <h3 className="font-serif text-lg mb-1">Adres</h3>
                 <p className="text-primary-foreground/70 text-sm leading-relaxed">
-                  ul. Stefana Jaracza 10/3<br />
-                  00-378 Warszawa<br />
-                  dzielnica Powiśle
+                  <span itemProp="streetAddress">ul. Stefana Jaracza 10/3</span><br />
+                  <span itemProp="postalCode">00-378</span>{" "}
+                  <span itemProp="addressLocality">Warszawa</span><br />
+                  <span>dzielnica Powiśle</span>
                 </p>
               </div>
             </div>

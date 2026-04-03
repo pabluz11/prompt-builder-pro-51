@@ -67,20 +67,22 @@ const ServicesSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((s, i) => (
-            <motion.div
+            <motion.article
               key={s.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.06 }}
               className="bg-card border border-border rounded-sm p-8 hover:shadow-lg hover:border-gold/30 transition-all duration-300 group"
+              itemScope
+              itemType="https://schema.org/Service"
             >
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-sm bg-primary/10 mb-5 group-hover:bg-gold/10 transition-colors">
                 <s.icon className="w-5 h-5 text-primary group-hover:text-gold transition-colors" />
               </div>
-              <h3 className="font-serif text-lg text-foreground mb-3">{s.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">{s.desc}</p>
-            </motion.div>
+              <h3 className="font-serif text-lg text-foreground mb-3" itemProp="name">{s.title}</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed" itemProp="description">{s.desc}</p>
+            </motion.article>
           ))}
         </div>
       </div>
