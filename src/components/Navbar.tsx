@@ -16,17 +16,17 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-navy-light/30">
       <div className="container-narrow flex items-center justify-between h-16 md:h-20 px-4 lg:px-16">
-        <a href="/" aria-label="Kancelaria Notarialna Marta Zabielska – strona główna" className="font-serif text-lg md:text-xl text-primary-foreground tracking-wide">
-          Kancelaria Notarialna <span className="text-gold">Marta Zabielska</span>
+        <a href="/" aria-label="Kancelaria Notarialna Marta Zabielska – strona główna" className="font-serif text-base md:text-lg text-primary-foreground tracking-wide shrink-0">
+          Kancelaria <span className="text-gold">Marta Zabielska</span>
         </a>
 
         {/* Desktop */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-4 lg:gap-6">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-primary-foreground/80 hover:text-gold transition-colors tracking-wide uppercase"
+              className="text-xs lg:text-sm text-primary-foreground/80 hover:text-gold transition-colors tracking-wide uppercase whitespace-nowrap"
             >
               {link.label}
             </a>
