@@ -14,7 +14,7 @@ const ContactSection = () => {
         >
           <span className="text-gold text-sm tracking-[0.2em] uppercase font-sans">Kontakt</span>
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mt-3">
-            Kontakt z kancelarią notarialną
+            Kontakt – Kancelaria Notarialna Warszawa Powiśle
           </h2>
         </motion.div>
 
