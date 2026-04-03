@@ -1,45 +1,54 @@
 import { motion } from "framer-motion";
 import { Home, Building, Building2, Gavel, Briefcase, Shield, ScrollText, Heart } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const services = [
   {
     icon: Home,
     title: "Obrót nieruchomościami",
+    href: "/sprzedaz-mieszkania-notariusz-warszawa",
     desc: "Umowy notarialne sprzedaży, darowizny i zamiany nieruchomości w Warszawie. Akty notarialne z wpisem do ksiąg wieczystych, ustanawianie hipotek i służebności.",
   },
   {
     icon: Building,
     title: "Inwestycje deweloperskie",
+    href: null as string | null,
     desc: "Obsługa procesów deweloperskich, przygotowanie i negocjowanie umów inwestycyjnych, wsparcie na każdym etapie realizacji inwestycji.",
   },
   {
     icon: Building2,
     title: "Obsługa spółek",
+    href: "/umowa-spolki-notariusz-warszawa",
     desc: "Tworzenie i przekształcanie spółek, zmiany umów spółek, protokoły zgromadzeń wspólników i walnych zgromadzeń.",
   },
   {
     icon: Gavel,
     title: "Poddania się egzekucji",
+    href: null as string | null,
     desc: "Sporządzanie aktów notarialnych o poddaniu się egzekucji, zabezpieczanie wierzytelności i interesów stron transakcji.",
   },
   {
     icon: Briefcase,
     title: "Transakcje M&A",
+    href: null as string | null,
     desc: "Przygotowanie i obsługa transakcji kupna i sprzedaży przedsiębiorstw oraz udziałów, wsparcie prawne w procesach fuzji i przejęć.",
   },
   {
     icon: Shield,
     title: "Zabezpieczenia przy finansowaniach",
+    href: null as string | null,
     desc: "Ustanawianie zabezpieczeń wierzytelności, w tym hipotek, zastawów i oświadczeń o poddaniu się egzekucji.",
   },
   {
     icon: ScrollText,
     title: "Prawo spadkowe",
+    href: "/dzial-spadku-notariusz-warszawa",
     desc: "Sporządzanie testamentów notarialnych w Warszawie, akty poświadczenia dziedziczenia, umowy o dział spadku i zrzeczenie się dziedziczenia.",
   },
   {
     icon: Heart,
     title: "Prawo rodzinne",
+    href: "/rozdzielnosc-majatkowa-notariusz-warszawa",
     desc: "Umowy majątkowe małżeńskie, rozdzielność majątkowa, czynności związane z zarządem majątkiem rodzinnym.",
   },
 ];
@@ -81,7 +90,15 @@ const ServicesSection = () => {
                 <s.icon className="w-5 h-5 text-primary group-hover:text-gold transition-colors" />
               </div>
               <h3 className="font-serif text-lg text-foreground mb-3" itemProp="name">{s.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed" itemProp="description">{s.desc}</p>
+              <p className="text-muted-foreground text-sm leading-relaxed mb-4" itemProp="description">{s.desc}</p>
+              {s.href && (
+                <Link
+                  to={s.href}
+                  className="text-gold hover:text-gold-light text-sm font-sans transition-colors"
+                >
+                  Dowiedz się więcej →
+                </Link>
+              )}
             </motion.article>
           ))}
         </div>
