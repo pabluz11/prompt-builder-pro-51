@@ -14,7 +14,7 @@ const LocalSeoSection = () => {
         >
           <span className="text-gold text-sm tracking-[0.2em] uppercase font-sans">Lokalizacja kancelarii</span>
           <h2 className="font-serif text-3xl md:text-4xl mt-3 mb-8">
-            Kancelaria notarialna Warszawa Powiśle – ul. Jaracza
+            Notariusz Warszawa Powiśle – Kancelaria przy ul. Stefana Jaracza
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8 mb-10">
