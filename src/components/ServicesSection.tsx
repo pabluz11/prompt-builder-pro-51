@@ -5,7 +5,7 @@ const services = [
   {
     icon: Home,
     title: "Obrót nieruchomościami",
-    desc: "Umowy notarialne sprzedaży, darowizny i zamiany nieruchomości. Akty notarialne z wpisem do ksiąg wieczystych, ustanawianie hipotek i służebności.",
+    desc: "Umowy notarialne sprzedaży, darowizny i zamiany nieruchomości w Warszawie. Akty notarialne z wpisem do ksiąg wieczystych, ustanawianie hipotek i służebności.",
   },
   {
     icon: Building,
@@ -35,7 +35,7 @@ const services = [
   {
     icon: ScrollText,
     title: "Prawo spadkowe",
-    desc: "Sporządzanie testamentów w formie aktu notarialnego, akty poświadczenia dziedziczenia, umowy o dział spadku i zrzeczenie się dziedziczenia.",
+    desc: "Sporządzanie testamentów notarialnych w Warszawie, akty poświadczenia dziedziczenia, umowy o dział spadku i zrzeczenie się dziedziczenia.",
   },
   {
     icon: Heart,
@@ -57,7 +57,7 @@ const ServicesSection = () => {
         >
           <span className="text-gold text-sm tracking-[0.2em] uppercase font-sans">Usługi notarialne</span>
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mt-3 mb-3">
-            Akty notarialne i umowy – pełen zakres usług
+            Usługi notarialne Warszawa – akty notarialne i umowy notarialne
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-sm leading-relaxed">
             Nasza kancelaria notarialna sporządza akty notarialne, umowy notarialne
@@ -67,20 +67,22 @@ const ServicesSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((s, i) => (
-            <motion.div
+            <motion.article
               key={s.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.06 }}
               className="bg-card border border-border rounded-sm p-8 hover:shadow-lg hover:border-gold/30 transition-all duration-300 group"
+              itemScope
+              itemType="https://schema.org/Service"
             >
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-sm bg-primary/10 mb-5 group-hover:bg-gold/10 transition-colors">
                 <s.icon className="w-5 h-5 text-primary group-hover:text-gold transition-colors" />
               </div>
-              <h3 className="font-serif text-lg text-foreground mb-3">{s.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">{s.desc}</p>
-            </motion.div>
+              <h3 className="font-serif text-lg text-foreground mb-3" itemProp="name">{s.title}</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed" itemProp="description">{s.desc}</p>
+            </motion.article>
           ))}
         </div>
       </div>

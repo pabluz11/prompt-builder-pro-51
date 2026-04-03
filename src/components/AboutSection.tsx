@@ -21,13 +21,14 @@ const AboutSection = () => {
         >
           <span className="text-gold text-sm tracking-[0.2em] uppercase font-sans">O kancelarii</span>
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mt-3 mb-6">
-            Kancelaria notarialna na Powiślu – notariusz Marta Zabielska
+            Kancelaria Notarialna Warszawa Powiśle – notariusz Marta Zabielska
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            Kancelaria Notarialna Marty Zabielskiej świadczy kompleksową obsługę w zakresie
-            czynności notarialnych – sporządzamy akty notarialne, umowy notarialne oraz
-            wszelkie dokumenty wymagające formy aktu notarialnego. Wieloletnie doświadczenie,
-            indywidualne podejście do każdej sprawy oraz dbałość o najwyższe standardy
+            Kancelaria Notarialna Marty Zabielskiej w Warszawie na Powiślu świadczy kompleksową
+            obsługę notarialną – sporządzamy akty notarialne, umowy notarialne oraz
+            wszelkie dokumenty wymagające formy aktu notarialnego. Obsługujemy klientów indywidualnych
+            i biznesowych z całej Warszawy: Śródmieście, Powiśle, Solec, Mokotów i okolic.
+            Wieloletnie doświadczenie, indywidualne podejście do każdej sprawy oraz dbałość o najwyższe standardy
             etyczne i prawne stanowią fundament naszej działalności.
           </p>
         </motion.div>

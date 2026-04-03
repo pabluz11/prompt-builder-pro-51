@@ -14,7 +14,7 @@ const ContactSection = () => {
         >
           <span className="text-gold text-sm tracking-[0.2em] uppercase font-sans">Kontakt</span>
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mt-3">
-            Kontakt z kancelarią notarialną
+            Kontakt – Kancelaria Notarialna Warszawa Powiśle
           </h2>
         </motion.div>
 
@@ -123,7 +123,7 @@ const ContactSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center text-muted-foreground text-sm mt-12 max-w-2xl mx-auto leading-relaxed"
         >
-          Zapraszamy do kontaktu przed umówienie się na czynność notarialną, co
+          Zapraszamy do kontaktu przed umówieniem się na czynność notarialną, co
           umożliwi precyzyjne ustalenie zarówno jej rodzaju, jak i zakresu niezbędnych
           dokumentów.
         </motion.p>

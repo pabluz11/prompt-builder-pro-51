@@ -14,18 +14,19 @@ const LocalSeoSection = () => {
         >
           <span className="text-gold text-sm tracking-[0.2em] uppercase font-sans">Lokalizacja kancelarii</span>
           <h2 className="font-serif text-3xl md:text-4xl mt-3 mb-8">
-            Kancelaria notarialna Warszawa Powiśle – ul. Jaracza
+            Notariusz Warszawa Powiśle – Kancelaria przy ul. Stefana Jaracza
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8 mb-10">
             <div className="flex gap-4">
               <MapPin className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
-              <div>
+              <div itemScope itemType="https://schema.org/PostalAddress">
                 <h3 className="font-serif text-lg mb-1">Adres</h3>
                 <p className="text-primary-foreground/70 text-sm leading-relaxed">
-                  ul. Stefana Jaracza 10/3<br />
-                  00-378 Warszawa<br />
-                  dzielnica Powiśle
+                  <span itemProp="streetAddress">ul. Stefana Jaracza 10/3</span><br />
+                  <span itemProp="postalCode">00-378</span>{" "}
+                  <span itemProp="addressLocality">Warszawa</span><br />
+                  <span>dzielnica Powiśle</span>
                 </p>
               </div>
             </div>
