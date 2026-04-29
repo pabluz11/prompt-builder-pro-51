@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import heroImage from "@/assets/hero-notary.jpg";
 
 const HeroSection = () => {
@@ -46,7 +46,7 @@ const HeroSection = () => {
             Gwarantujemy precyzję, poufność i bezpieczeństwo prawne.
           </p>
 
-          <div className="flex justify-center">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="tel:228691981"
               className="inline-flex items-center justify-center gap-2 border border-beige/40 text-beige-light hover:bg-beige-light/10 font-sans font-semibold px-8 py-3.5 rounded-sm tracking-wide transition-colors"
@@ -54,6 +54,10 @@ const HeroSection = () => {
               <Phone className="w-4 h-4" />
               Zadzwoń 22 869 19 81
             </a>
+            <div className="inline-flex items-center justify-center gap-2 text-beige/80 font-sans text-sm sm:text-base">
+              <Mail className="w-4 h-4 text-gold" aria-hidden="true" />
+              <span>m.zabielska@notariusze.waw.pl</span>
+            </div>
           </div>
         </motion.div>
       </div>
